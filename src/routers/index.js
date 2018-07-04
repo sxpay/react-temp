@@ -18,7 +18,7 @@ export default class Routers extends Component {
                         exact
                         path={route.path}
                         render={props => (
-                            <route.component {...props} title={route.title.title} toast={Toast}>
+                            <route.component {...props} title={route.title} toast={Toast}>
                                 { setTitle(route.title)}
                             </route.component>
                         )}

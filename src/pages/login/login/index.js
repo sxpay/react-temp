@@ -6,13 +6,13 @@ export default class Login extends  parentComponent{
         super(props);
 
     }
-    ccc=()=>{
+    ccc(){
        this.props.history.push('/login/home')
     }
     render() {
         return (
             <div >
-                <div > 登录了</div>
+                <div onClick={()=>this.ccc()}> 登录了</div>
             </div>
         )
     }

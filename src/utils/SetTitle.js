@@ -6,8 +6,6 @@ export const setTitle = (getTitle) => {
     const title = getTitle
     if(title) {
         document.title = title.title
-        store.dispatch(actions.setObjs('titleHeaderObj', title));
-        store.dispatch(actions.setVars('titleHeader', title.title));
     }
     var mobile = navigator.userAgent.toLowerCase();
     if (/iphone|ipad|ipod/.test(mobile)) {
