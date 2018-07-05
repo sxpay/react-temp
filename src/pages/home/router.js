@@ -6,6 +6,6 @@ export default [
             headerHide: true,
             footerHide: true,
         },
-        component: () => import('../../pages/home/home'),
+        component: () => import('pages/home/home'),
     },
 ];

@@ -118,9 +118,9 @@ module.exports = function(options) {
         resolve: {
             extensions: ['.js', '.md', '.txt'],
             alias: {
-                modules: path.resolve(__dirname, '../src/modules'),
+                pages: path.resolve(__dirname, '../src/pages'),
                 components: path.resolve(__dirname, '../src/components'),
-                reduxes: path.resolve(__dirname, '../src/reduxes'),
+                reduxs: path.resolve(__dirname, '../src/redux'),
                 utils: path.resolve(__dirname, '../src/utils'),
                 routers: path.resolve(__dirname, '../src/routers'),
                 assets: path.resolve(__dirname, '../src/assets'),

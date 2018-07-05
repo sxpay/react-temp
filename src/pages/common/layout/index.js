@@ -3,9 +3,9 @@
 import React from 'react';
 import { connect } from "react-redux"
 import propTypes from 'prop-types';
-import ReactLoading from '../../../components/loading';
-import fetchInit from '../../../utils/FetchInit';
-import Header from '../../../components/header';
+import ReactLoading from 'components/loading';
+import fetchInit from 'utils/FetchInit';
+import Header from 'components/header';
 
 import styles from './style.scss';
 

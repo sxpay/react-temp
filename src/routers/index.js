@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Toast } from 'antd-mobile';
-import routes from '../pages/common/routerPage';
+import routes from 'pages/common/routerPage';
 import {setTitle} from 'utils/SetTitle.js';
 import fetch from 'sx-fetch';
 @fetch.inject()

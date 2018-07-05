@@ -74,9 +74,7 @@ let getTestPlugins = function() {
         // {from: path.resolve(__dirname, '../dist'),  to: 'dist'}
     ])),
     plugins.push(new webpack.DefinePlugin({
-        'process.env': {
-            'NODE_ENV': JSON.stringify('test')
-        },
+
         saUrl: JSON.stringify('http://10.1.1.81:8106/sa'),
     }))
     plugins.push(new CleanWebpackPlugin('build',

@@ -1,6 +1,5 @@
 
-import store from '../redux/store'
-import actions from '../redux/actions'
+
 
 export const setTitle = (getTitle) => {
     const title = getTitle

@@ -1,8 +1,8 @@
 /* eslint-disable */
 
 import React from 'react';
-import * as actions from '../../../redux/actions';
-import store from '../../../redux/store';
+import * as actions from 'reduxs/actions';
+import store from 'reduxs/store';
 // import {pageView} from "../../../utils/Analytins";
 
 export default class parentComponent extends React.Component {

@@ -1,5 +1,5 @@
 import React from 'react';
-import parentComponent from '../../../pages/common/parentComponent';
+import parentComponent from 'pages/common/parentComponent';
 
 export default class Login extends  parentComponent{
     constructor(props) {
