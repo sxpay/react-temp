@@ -24,19 +24,6 @@ const fetchinit =(init)=>{
             switch (response.data.msgCode){
                 case '0000':
                     return;
-                case '2000':
-                    //版本更新;
-                    $.cookie('Version-Token', response.data.msgInfo, { expires: 8, path: '/'});
-                    setTimeout(()=>{
-                        window.location.reload();
-                    },1000)
-                case 'PTM0100':
-                  var _protocol = (("https:" == document.location.protocol) ? "https://" : "http://")
-                  window.location.replace(`${_protocol}${window.location.host}${sessionStorage.getItem('h5Channel')==='MPOS' ? '/login':'/loginOutside'}`)
-                    return;
-                case 'PTM9999':
-                    Toast.info('系统异常',3)
-                    return;
                 default:
                     return;
             }

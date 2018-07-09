@@ -120,7 +120,7 @@ module.exports = function(options) {
             alias: {
                 pages: path.resolve(__dirname, '../src/pages'),
                 components: path.resolve(__dirname, '../src/components'),
-                reduxs: path.resolve(__dirname, '../src/redux'),
+                reduxs: path.resolve(__dirname, '../src/reduxs'),
                 utils: path.resolve(__dirname, '../src/utils'),
                 routers: path.resolve(__dirname, '../src/routers'),
                 assets: path.resolve(__dirname, '../src/assets'),

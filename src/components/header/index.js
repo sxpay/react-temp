@@ -1,14 +1,12 @@
 import React from "react"
 import styles from "./Header.scss"
 import icon from "../../assets/images/headerImg/backBlack.png"
-import * as actions from '../../redux/actions';
-import store from '../../redux/store';
+import store from 'reduxs/store';
 export default class Header extends React.Component {
   goBack() {
     window.history.back()
   }
   componentDidMount() {
-    console.log(store.getState().objs.titleHeaderObj && store.getState().objs.titleHeaderObj.headerHide)
   }
   render() {
     const { title } = this.props

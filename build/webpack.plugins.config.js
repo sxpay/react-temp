@@ -40,7 +40,6 @@ let getProdPlugins = function() {
     plugins.push(new webpack.HashedModuleIdsPlugin())
     plugins.push(new CopyWebpackPlugin([
         {from: path.resolve(__dirname, '../src/assets/lib'),  to: 'assets/lib'},
-        // {from: path.resolve(__dirname, '../dist'),  to: 'dist'}
     ])),
     plugins.push(new webpack.DefinePlugin({
         'process.env': {
@@ -48,7 +47,7 @@ let getProdPlugins = function() {
         },
         saUrl: JSON.stringify('https://www.vbillbank.com/shence/sa?project=production'),
     }))
-    plugins.push(new CleanWebpackPlugin('build',
+    plugins.push(new CleanWebpackPlugin('dist',
         {
             root: path.resolve(__dirname, '..'),
             verbose: true,
@@ -71,13 +70,12 @@ let getTestPlugins = function() {
     plugins.push(new webpack.HashedModuleIdsPlugin())
     plugins.push(new CopyWebpackPlugin([
         {from: path.resolve(__dirname, '../src/assets/lib'),  to: 'assets/lib'},
-        // {from: path.resolve(__dirname, '../dist'),  to: 'dist'}
     ])),
     plugins.push(new webpack.DefinePlugin({
 
         saUrl: JSON.stringify('http://10.1.1.81:8106/sa'),
     }))
-    plugins.push(new CleanWebpackPlugin('build',
+    plugins.push(new CleanWebpackPlugin('dist',
         {
             root: path.resolve(__dirname, '..'),
             verbose: true,
