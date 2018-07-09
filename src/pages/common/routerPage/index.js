@@ -6,7 +6,7 @@ import Routes from '../../router';
 // import Loadings from './component/loading'
 // import ErrorPages from './component/ErrorPage'
 
-const Loading = ({ error, pastDelay }) => {
+const Loading = ({error, pastDelay}) => {
   if (pastDelay) {
     return <div>loading</div>;
   } else if (error) {

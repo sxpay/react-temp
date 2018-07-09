@@ -1,5 +1,4 @@
-
-import { Map } from 'immutable'
+import {Map} from 'immutable'
 
 module.exports = function (state = Map({}), action = {}) {
   if (action.type === 'MAP_SET') {

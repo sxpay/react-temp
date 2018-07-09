@@ -7,8 +7,8 @@ import store from 'reduxs/store';
 
 export default class parentComponent extends React.Component {
   constructor(props) {
-      super(props);
-    if(store.getState().vars.titleHeader !== document.title){
+    super(props);
+    if (store.getState().vars.titleHeader !== document.title) {
       store.dispatch(actions.setVars('titleHeader', document.title))
       store.dispatch(actions.setObjs('titleHeaderObj', this.props.title));
     }

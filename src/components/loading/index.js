@@ -1,10 +1,11 @@
 // var _ = require('lodash')
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import styles from './Loading.scss';
+
 @connect(
   state => {
-    return { loading: state.vars.loading };
+    return {loading: state.vars.loading};
   },
   dispatch => {
     return {};
@@ -14,7 +15,10 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
   }
-  componentWillMount() {}
+
+  componentWillMount() {
+  }
+
   render() {
     return (
       <div>
@@ -23,7 +27,7 @@ export default class Home extends React.Component {
             <div className={styles.item_inner}>
               <div className={styles.item_loader_container}>
                 <div className={`${styles.la_ball_clip_rotate} ${styles.la_2x}`}>
-                  <div />
+                  <div/>
                 </div>
               </div>
             </div>

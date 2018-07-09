@@ -1,4 +1,5 @@
 import persistState from 'redux-localstorage';
+
 'use strict'
 
 var {createStore, combineReducers, compose} = require('redux')
@@ -12,6 +13,6 @@ var mainReducer = combineReducers({
   map
 })
 const createPersistentStore = compose(
-    persistState()
+  persistState()
 )(createStore);
 export default module.exports = createPersistentStore(mainReducer)
